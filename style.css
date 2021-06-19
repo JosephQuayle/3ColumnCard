@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 60%;
+  height: 60vh;
+  display: flex;
+  margin: auto;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: auto;
+  padding-inline: 5% 5%;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+img {
+  width: 7em;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+h1 {
+  padding-bottom: 10%;
+  font-size: 3rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+p {
+  line-height: 2;
+  font-size: 1.5rem;
+  padding-bottom: 50%;
+  font-family: "BigShouldersDisplay-Bold", cursive;
+}
+
+button {
+  width: 70%;
+  padding: 5%;
+  border-radius: 30rem;
+  border-style: none;
+  font-family: "BigShouldersDisplay-Bold", cursive;
+}
+
+.card1 {
+  background: rgb(255, 136, 39);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.card1 button {
+  color: rgb(255, 136, 39);
+}
+
+.card2 {
+  background: rgb(41, 116, 146);
+}
+
+.card2 button {
+  color: rgb(41, 116, 146);
+}
+
+.card3 {
+  background: rgb(13, 75, 62);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.card3 button {
+  color: rgb(13, 75, 62);
+}
+
+@media only screen and (max-width: 1074px) {
+  .container {
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+  }
+  .card {
+    padding-inline: 10% 10%;
+    padding-bottom: 15%;
+  }
+
+  .card1 {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0rem;
+  }
+
+  .card3 {
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  h1 {
+    padding-bottom: 2%;
+  }
+
+  img {
+    padding-bottom: 5%;
+  }
+
+  p {
+    padding-bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  .container {
+    width: 90%;
+  }
+}
